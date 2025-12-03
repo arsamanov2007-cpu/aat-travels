@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAT Travel | Маврикий</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #0f172a;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      padding: 15px 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0ea5a4;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0ea5a4;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: url('https://ht.kz/fls/post/big16x9/1582628421b1af31bf.jpg') center/cover no-repeat;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+    }
+
+    .info-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0ea5a4;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .map-container {
+      text-align: center;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .map-container img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: black;
+      border-radius: 50%;
+      top: 45%;
+      left: 40%;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .dot:hover {
+      transform: scale(1.3);
+      background: #0ea5a4;
+    }
+
+    .info-popup {
+      display: none;
+      background: #e0f7f6;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      background: #f0fbfb;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f5f9;
+      color: #475569;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="AAT Travel" class="logo-img">
+      <span>AAT Travel</span>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="tours.html">Туры</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Маврикий — остров вечного лета</h1>
+    <p>Бирюзовый океан, белоснежные пляжи и настоящий рай для отдыха</p>
+  </section>
+
+  <section class="content">
+    <div class="info-box">
+      <h2>🏝 О стране</h2>
+      <p>
+        Маврикий — живописный остров в Индийском океане, славящийся своими пляжами, коралловыми рифами и гостеприимством. 
+        Это идеальное место для спокойного отдыха, романтических поездок и дайвинга. 
+        Здесь сочетаются культура Индии, Африки и Европы, создавая неповторимую атмосферу.
+      </p>
+
+      <h2>📍 Популярные курорты</h2>
+      <ul>
+        <li><b>Гранд-Бэй</b> — центр развлечений и водных видов спорта.</li>
+        <li><b>Флик-ан-Флак</b> — лучшие пляжи и закаты острова.</li>
+        <li><b>Ле-Морн</b> — горный массив и символ Маврикия, объект ЮНЕСКО.</li>
+        <li><b>Тамарин</b> — место для серфинга и наблюдения за дельфинами.</li>
+      </ul>
+
+      <h2>💼 Что включено в тур</h2>
+      <div class="highlight">
+        <ul>
+          <li>Авиаперелёт и трансфер</li>
+          <li>Проживание в 4★–5★ отелях у океана</li>
+          <li>Питание “всё включено”</li>
+          <li>Экскурсии: вулкан Тру-о-Серф, Ботанический сад Памплемус, парк Касела</li>
+          <li>Водные развлечения и дайвинг</li>
+        </ul>
+      </div>
+
+      <h2>🌺 Почему выбрать Маврикий</h2>
+      <p>
+        Это остров, где круглый год светит солнце, а вода остаётся тёплой даже зимой.  
+        Здесь царит атмосфера спокойствия, уединения и роскоши.  
+        Маврикий подойдёт для молодожёнов, семейного отдыха и путешественников, ищущих вдохновение.
+      </p>
+
+      <h2>🗺 Карта Маврикия</h2>
+      <div class="map-container">
+        <img src="https://static1.arrivo.ru/nation/country/mapb/47/mavrikii-karta-bolshaya.jpg" alt="Карта Маврикия">
+        <div class="dot" id="port-dot" title="Порт-Луи — столица Маврикия"></div>
+      </div>
+
+      <div class="info-popup" id="port-info">
+        <h3>🏙 Порт-Луи — столица Маврикия</h3>
+        <p>
+          Порт-Луи — оживлённая столица с колониальной архитектурой, рынками и набережной. 
+          Здесь можно прогуляться по старинным улочкам, посетить музеи и насладиться видом на океан с крепости Аделаида.
+        </p>
+      </div>
+      <button id="topBtn" style="display:none;">Жоғары қайту</button>
+<script>
+let btn = document.getElementById("topBtn");
+
+window.onscroll = () => {
+  btn.style.display = window.scrollY > 200 ? "block" : "none";
+};
+
+btn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+</script>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 AAT Travel | Все права защищены
+  </footer>
+
+  <!-- 🌴 Dynamic DHTML -->
+  <script>
+    const portDot = document.getElementById('port-dot');
+    const portInfo = document.getElementById('port-info');
+
+    portDot.addEventListener('click', function() {
+      portInfo.style.display = portInfo.style.display === 'block' ? 'none' : 'block';
+      portDot.style.transform = 'scale(1.3)';
+      setTimeout(() => portDot.style.transform = 'scale(1)', 300);
+    });
+  </script>
+
+</body>
+</html>
